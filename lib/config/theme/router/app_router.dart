@@ -25,5 +25,26 @@ final GoRouter appRouter = GoRouter(
         return const CardsScreen();
       },
     ),
+    GoRoute(
+      path: '/progress',
+      name: ProgressScreen.name,
+      builder: (BuildContext context, GoRouterState state) {
+        return const ProgressScreen();
+      },
+    ),
+    GoRoute(
+      path: '/snackbars',
+      name: SnackbarScreen.name,
+      builder: (BuildContext context, GoRouterState state) {
+        return const SnackbarScreen();
+      },
+    ),
+    GoRoute(
+      path: '/animated',
+      name: AnimatedScreen.name,
+      builder: (BuildContext context, GoRouterState state) {
+        return const AnimatedScreen();
+      },
+    ),
   ],
 );
